@@ -14,11 +14,11 @@ ruleset io.picolabs.weather {
     }
     
     //getCurrent = function() {
-      //http:get("https://manifold.picolabs.io:9090/sky/cloud/NDUTywTKJwDH5Y9wdgXUoo/com.example.weather/getCurrent"){"content"}.decode()
+      //http:get("https://manifold.picolabs.io:9090/sky/cloud/NDUTywTKJwDH5Y9wdgXUoo/io.picolabs.manifold.weather_pico/getCurrent"){"content"}.decode()
     //}
     
     getData = function() {
-      http:get("https://manifold.picolabs.io:9090/sky/cloud/NDUTywTKJwDH5Y9wdgXUoo/com.example.weather/getData"){"content"}.decode()
+      http:get("https://manifold.picolabs.io:9090/sky/cloud/NDUTywTKJwDH5Y9wdgXUoo/io.picolabs.manifold.weather_pico/getData"){"content"}.decode()
     }
     
     app = { "name" : "Weather", "version" : "0.0" };
