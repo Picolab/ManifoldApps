@@ -76,7 +76,8 @@ ruleset io.picolabs.aurora_app {
     }
   }
 
-  rule discovery { select when manifold apps send_directive("app discovered...", {"app": app, "rid": meta:rid, "bindings": bindings(), "iconURL": "https://image.flaticon.com/icons/svg/191/191035.svg"} ); }
+// icon created as https://image.flaticon.com/icons/svg/191/191035.svg
+  rule discovery { select when manifold apps send_directive("app discovered...", {"app": app, "rid": meta:rid, "bindings": bindings(), "iconURL": "https://raw.githubusercontent.com/Picolab/ManifoldApps/master/Aurora/aurora_app-logo.svg"} ); }
 
   rule init {
     select when wrangler ruleset_added where rids >< meta:rid
