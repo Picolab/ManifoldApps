@@ -144,12 +144,13 @@ ruleset io.picolabs.score_tracker {
     }
   }
   
+// icon created at https://image.flaticon.com/icons/svg/1162/1162481.svg
   rule discovery {
     select when manifold apps
     send_directive("app discovered...",
                             {
                               "app": app,
-                              "iconURL": "https://image.flaticon.com/icons/svg/1162/1162481.svg"
+                              "iconURL": "https://raw.githubusercontent.com/Picolab/ManifoldApps/master/uta/score_tracker-logo.svg"
                             } );
   }
   
